@@ -36,7 +36,6 @@ const useLocalStorageTasks = () => {
   return { tasks, addTask, toggleTask, deleteTask };
 };
 
-
 const TaskManager = () => {
   const { tasks, addTask, toggleTask, deleteTask } = useLocalStorageTasks();
   const [newTaskText, setNewTaskText] = useState('');
